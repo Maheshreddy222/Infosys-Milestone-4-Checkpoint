@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speakers — Checkpoint</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="none" width="20" height="20"><path d="M4 12h16M15 7l5 5-5 5" stroke="#e8a33d" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Checkpoint
+    </div>
+    <a class="navitem" data-page="register.html" href="register.html" data-roles="user"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>Registration</a>
+    <a class="navitem" data-page="events.html" href="events.html" data-roles="user,admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Events</a>
+    <a class="navitem" data-page="myschedule.html" href="myschedule.html" data-roles="user"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>My Schedule</a>
+    <a class="navitem" data-page="pastevents.html" href="pastevents.html" data-roles="user"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Past Events</a>
+    <a class="navitem" data-page="feedback.html" href="feedback.html" data-roles="user"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Feedback</a>
+    <a class="navitem" data-page="analytics.html" href="analytics.html" data-roles="user"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 16l4-6 3 3 5-7"/></svg>Analytics</a>
+    <a class="navitem" data-page="insights.html" href="insights.html" data-roles="user"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/><path d="M9 21h6"/></svg>AI Insights</a>
+    <a class="navitem" data-page="checkin.html" href="checkin.html" data-roles="admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="6" height="6"/><rect x="14" y="4" width="6" height="6"/><rect x="4" y="14" width="6" height="6"/><path d="M14 14h3v3h-3zM20 14v3M17 20h3"/></svg>Check-in</a>
+    <a class="navitem" data-page="venues.html" href="venues.html" data-roles="admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V9l7-6 7 6v12M9 21v-6h6v6"/></svg>Venues</a>
+    <a class="navitem" data-page="speakers.html" href="speakers.html" data-roles="admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 1v11M8 5a4 4 0 0 1 8 0"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>Speakers</a>
+    <a class="navitem" data-page="scheduling.html" href="scheduling.html" data-roles="admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/><path d="M8 14l2 2 4-4"/></svg>Scheduling</a>
+    <a class="navitem" data-page="session-analytics.html" href="session-analytics.html" data-roles="admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg>Session Analytics</a>
+    <a class="navitem" data-page="sponsors.html" href="sponsors.html" data-roles="admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l2.4 5.5L20 8.3l-4 3.9.9 5.8L12 15.8 7.1 18l.9-5.8-4-3.9 5.6-.8z"/></svg>Sponsors</a>
+    <a class="navitem" data-page="incidents.html" href="incidents.html" data-roles="user,admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 20h20L12 2z"/><path d="M12 9v5M12 17h.01"/></svg>Incidents</a>
+    <a class="navitem" data-page="operations.html" href="operations.html" data-roles="admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>Operations</a>
+
+    <a class="navitem" data-page="event-intelligence.html" href="event-intelligence.html" data-roles="admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/><path d="M19 5l2-2"/></svg>Event Intelligence</a>
+    <a class="navitem" data-page="executive-dashboard.html" href="executive-dashboard.html" data-roles="admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Executive Dashboard</a>
+    <a class="navitem" data-page="agent-orchestration.html" href="agent-orchestration.html" data-roles="admin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="12" r="2"/><circle cx="18" cy="6" r="2"/><circle cx="18" cy="18" r="2"/><path d="M8 12h6M16.3 7.4l-8.2 3.5M8.1 13.1l8.2 3.5"/></svg>Agent Orchestration</a>
+    <div class="sidebar-foot">
+      <div class="event-pill" id="sidebarEventPill">No event selected</div>
+      <div class="event-pill" id="authStatus" style="margin-top:8px;">…</div>
+    </div>
+  </aside>
+
+  <div class="mobile-tabs" id="mobileTabs">
+    <a data-page="register.html" href="register.html" data-roles="user">Registration</a>
+    <a data-page="events.html" href="events.html" data-roles="user,admin">Events</a>
+    <a data-page="myschedule.html" href="myschedule.html" data-roles="user">My Schedule</a>
+    <a data-page="pastevents.html" href="pastevents.html" data-roles="user">Past Events</a>
+    <a data-page="feedback.html" href="feedback.html" data-roles="user">Feedback</a>
+    <a data-page="analytics.html" href="analytics.html" data-roles="user">Analytics</a>
+    <a data-page="insights.html" href="insights.html" data-roles="user">AI Insights</a>
+    <a data-page="checkin.html" href="checkin.html" data-roles="admin">Check-in</a>
+    <a data-page="venues.html" href="venues.html" data-roles="admin">Venues</a>
+    <a data-page="speakers.html" href="speakers.html" data-roles="admin">Speakers</a>
+    <a data-page="scheduling.html" href="scheduling.html" data-roles="admin">Scheduling</a>
+    <a data-page="session-analytics.html" href="session-analytics.html" data-roles="admin">Session Analytics</a>
+    <a data-page="sponsors.html" href="sponsors.html" data-roles="admin">Sponsors</a>
+    <a data-page="incidents.html" href="incidents.html" data-roles="user,admin">Incidents</a>
+    <a data-page="operations.html" href="operations.html" data-roles="admin">Operations</a>
+
+    <a data-page="event-intelligence.html" href="event-intelligence.html" data-roles="admin">Event Intelligence</a>
+    <a data-page="executive-dashboard.html" href="executive-dashboard.html" data-roles="admin">Executive Dashboard</a>
+    <a data-page="agent-orchestration.html" href="agent-orchestration.html" data-roles="admin">Agent Orchestration</a>
+  </div>
+
+  <main>
+    <div class="topbar">
+      <div>
+        <h1>Speakers</h1>
+        <div class="sub">Manage speaker profiles and ask the Speaker Agent to rank the best fit for a topic.</div>
+      </div>
+      <div class="event-select">
+        <select id="eventSwitcher"><option value="">— no events yet —</option></select>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card">
+        <h3>Add a speaker</h3>
+        <div id="speakerMsg" class="msg error"></div>
+        <div class="field-row"><label class="req">Full name</label><input id="spName" placeholder="Dr. Lena Torres"></div>
+        <div class="field-row"><label class="req">Contact number</label><input id="spContactNumber" type="tel" placeholder="+91 98765 43210"></div>
+        <div class="field-row"><label class="req">Expertise / topics (comma-separated)</label><input id="spExpertise" placeholder="AI, machine learning, data ethics"></div>
+        <div class="grid2">
+          <div class="field-row"><label>Language</label><input id="spLanguage" placeholder="English" value="English"></div>
+          <div class="field-row"><label>Experience (years)</label><input id="spExperience" type="number" min="0" placeholder="8"></div>
+        </div>
+        <div class="grid2">
+          <div class="field-row"><label>Fee (₹)</label><input id="spFee" type="number" min="0" placeholder="1500"></div>
+          <div class="field-row"><label>Audience feedback (1-5)</label><input id="spEngagement" type="number" min="1" max="5" placeholder="4"></div>
+        </div>
+        <div class="field-row"><label>Available dates (comma-separated, blank = flexible)</label><input id="spDates" placeholder="2026-09-12, 2026-09-13"></div>
+        <div class="grid2">
+          <div class="field-row"><label>Daily availability from</label><input id="spAvailStart" type="time"></div>
+          <div class="field-row"><label>Daily availability until</label><input id="spAvailEnd" type="time"></div>
+        </div>
+        <button class="btn btn-amber" id="createSpeakerBtn" style="width:100%; margin-top:4px;">+ Add speaker</button>
+      </div>
+
+      <div class="card">
+        <h3>Speaker Agent — get a recommendation</h3>
+        <div class="sub" style="color:var(--dim); font-size:12px; margin-bottom:14px;">When several speakers suit the same topic, they're ranked by topic relevance, language, experience, prior audience feedback and budget fit. Speakers already booked for the requested slot are excluded automatically.</div>
+        <div class="field-row"><label class="req">Session topic</label><input id="rqTopic" placeholder="machine learning"></div>
+        <div class="grid2">
+          <div class="field-row"><label>Date</label><input id="rqSDate" type="date"></div>
+          <div class="field-row"><label>Language preference</label><input id="rqLanguage" placeholder="English"></div>
+        </div>
+        <div class="grid2">
+          <div class="field-row"><label>Start time</label><input id="rqSStart" type="time"></div>
+          <div class="field-row"><label>End time</label><input id="rqSEnd" type="time"></div>
+        </div>
+        <div class="field-row"><label>Budget (₹)</label><input id="rqSBudget" type="number" min="0" placeholder="1500"></div>
+        <button class="btn btn-amber" id="recommendSpeakerBtn" style="width:100%; margin-top:6px;">Recommend speakers</button>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h3>All speakers <span class="mono" style="font-weight:400; font-size:11px; color:var(--dim);">(shared across every event)</span></h3>
+      <div id="speakersList"><div class="empty">Loading…</div></div>
+    </div>
+
+    <div id="speakerResults" style="margin-top:16px;"></div>
+
+  </main>
+</div>
+
+<script src="js/helpers.js"></script>
+<script src="js/auth.js"></script>
+<script src="js/api.js"></script>
+<script src="js/shared.js"></script>
+<script src="js/pages/speakers.js"></script>
+</body>
+</html>
