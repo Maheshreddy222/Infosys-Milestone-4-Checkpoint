@@ -69,10 +69,14 @@ async function renderAuthStatus() {
 // once there.
 function filterNavByRole(user) {
   const role = user ? user.role : null;
+
   document.querySelectorAll('[data-roles]').forEach((el) => {
     const roles = el.dataset.roles.split(',');
     el.style.display = role && roles.includes(role) ? '' : 'none';
   });
+
+  // Reveal the sidebar only after role filtering is complete.
+  document.body.classList.add('auth-ready');
 }
 
 // Replaces everything in <main> below the topbar with a locked-out message.
@@ -102,7 +106,11 @@ function lockPageForAccount(user) {
 // Convenience for pages that haven't called initShared() (which already
 // resolves the user): checks the admin role and locks the page in one call.
 async function requireAdminOrBlock() {
-  const user = await getCurrentUser();
-  if (!isAdmin(user)) lockPageForAccount(user);
+  const user = await renderAuthStatus();
+
+  if (!isAdmin(user)) {
+    lockPageForAccount(user);
+  }
+
   return user;
 }
